@@ -4387,7 +4387,7 @@ button.App-button {
 .Degen-Strategies-App-card-box {
     border-radius: 12px;
     padding: 1px;
-    width: 100%
+    inline-size: 100%
 }
 
 .Degen-Strategies-App-card {
@@ -4593,41 +4593,41 @@ button.App-button {
 }
 
 .mt-10 {
-    margin-top: 1rem
+    margin-block-start: 1rem
 }
 
 .mt-16 {
-    margin-top: 1.6rem
+    margin-block-start: 1.6rem
 }
 
 .mt-24 {
-    margin-top: 2.4rem
+    margin-block-start: 2.4rem
 }
 
 .mt-40 {
-    margin-top: 4rem
+    margin-block-start: 4rem
 }
 
 .mt-60 {
-    margin-top: 6rem
+    margin-block-start: 6rem
 }
 
 .mt-70 {
-    margin-top: 7rem
+    margin-block-start: 7rem
 }
 
 .mt-90 {
-    margin-top: 9rem
+    margin-block-start: 9rem
 }
 
 .arrowLeft {
     border-radius: 50%;
     cursor: pointer;
     display: flex;
-    margin-right: 1rem
+    margin-inline-end: 1rem;
 }
 
-.arrowLeft:hover {
+.arrowinset-inline-start:hover {
     background: #2e3a4b
 }
 
@@ -6125,28 +6125,12 @@ button.App-button {
     }
 }
 
-.sm.jsx-1048088370 {
-    -webkit-box-flex: 0;
-    -webkit-flex-grow: 0;
-    -ms-flex-positive: 0;
-    flex-grow: 0;
-    max-width: 50%;
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    display: inline;
-}
 
-.xs.jsx-1048088370 {
-    -webkit-box-flex: 0;
-    -webkit-flex-grow: 0;
-    -ms-flex-positive: 0;
-    flex-grow: 0;
-    max-width: 100%;
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    display: inline;
+
+.jsx-1048088370 {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .item.jsx-1048088370 {
