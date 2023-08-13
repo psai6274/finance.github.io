@@ -1,0 +1,790 @@
+html {
+    background: #081a2a;
+    font-size: 10px
+}
+
+@font-face {
+    font-family: Rubik-Bold;
+    font-style: normal;
+    font-weight: 700;
+    src: url(./static/Rubik-Bold.ttf)
+}
+
+@font-face {
+    font-family: Rubik-Medium;
+    font-style: normal;
+    font-weight: 500;
+    src: url(./static/Rubik-Medium.ttf)
+}
+
+@font-face {
+    font-family: Rubik-Regular;
+    font-style: normal;
+    font-weight: 400;
+    src: url(./static/Rubik-Regular.ttf)
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: Rubik-Medium, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    margin: 0
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, Courier New, monospace
+}
+
+.Home {
+    min-height: 270rem;
+    padding-bottom: 31rem
+}
+
+.Home-top {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative
+}
+
+.default-container {
+    margin: 0 auto;
+    max-width: 112rem;
+    padding-left: 3.2rem;
+    padding-right: 3.2rem
+}
+
+.Home-title-section-container {
+    padding-top: 17.6rem;
+    position: relative;
+    width: 100%
+}
+
+.Home-title-section {
+    align-items: center;
+    display: flex;
+    flex-direction: column
+}
+
+.Home-title-section .Home-title {
+    color: #fff;
+    font-size: 4.8rem;
+    font-weight: 500;
+    letter-spacing: 0;
+    margin-bottom: 4rem;
+    text-align: center
+}
+
+.Home-title-section .Home-description {
+    color: hsla(0, 0%, 100%, .8);
+    font-family: Rubik-Regular;
+    font-size: 2.8rem;
+    font-weight: 400;
+    margin-bottom: 10rem;
+    max-width: 96.5rem;
+    text-align: center
+}
+
+.Home-latest-info-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 12rem;
+    width: 100%
+}
+
+.Home-latest-info-block {
+    align-items: center;
+    background: rgba(57, 108, 153, .4);
+    border-radius: 12px;
+    display: flex;
+    margin: 1.6rem 0;
+    max-width: 50rem;
+    padding: 2rem;
+    width: 100%
+}
+
+.Home-latest-info-img {
+    background: linear-gradient(63.43deg, #264867 16.67%, #386187);
+    border-radius: 12px;
+    margin-right: 2rem;
+    padding: 1.2rem
+}
+
+.Home-latest-info__title {
+    color: #fff;
+    font-family: Rubik-Regular;
+    font-size: 2rem;
+    letter-spacing: 0;
+    line-height: 2.4rem
+}
+
+.Home-latest-info__value {
+    align-items: baseline;
+    color: #fff;
+    display: flex;
+    font-size: 4.8rem;
+    letter-spacing: 0;
+    line-height: 6.1rem
+}
+
+.Home-latest-info__value .increase {
+    display: flex;
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+    margin-left: 1.2rem
+}
+
+.Home-latest-info__value .increase.up {
+    color: #3ee875
+}
+
+.Home-latest-info__value .increase.down {
+    color: #e73261
+}
+
+.Home-choose-side-container {
+    width: 100%
+}
+
+.Home-choose-title-section {
+    background: #091927;
+    border-radius: 1.2rem;
+    padding: 6rem
+}
+
+.Home-choose-title-section .Home-title {
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 0;
+    margin-bottom: 4rem;
+    text-align: center
+}
+
+.Home-choose-title-section .Home-description {
+    color: hsla(0, 0%, 100%, .8);
+    font-family: Rubik-Regular;
+    font-size: 2.8rem;
+    font-weight: 400;
+    margin-bottom: 5rem;
+    text-align: center
+}
+
+.Home-side-card-options {
+    grid-column-gap: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr
+}
+
+.Home-side-card-option {
+    background: #13293c;
+    border-radius: 1.2rem;
+    max-width: 48rem;
+    padding: 2.8rem;
+    position: relative
+}
+
+.Home-side-card-option .Home-token-card-option-title {
+    display: flex;
+    justify-content: space-between
+}
+
+.Home-side-card-option .Home-token-card-option-title .side-title {
+    color: #fff;
+    font-size: 2rem
+}
+
+.Home-side-card-option .side-bottoms {
+    display: flex;
+    justify-content: space-between
+}
+
+.Home-side-card-option .Home-token-card-option-title .side-bottom {
+    border: 1px solid #848a93;
+    border-radius: 1.2rem;
+    color: #848a93;
+    cursor: pointer;
+    font-family: Rubik-Regular;
+    font-size: 1.2rem;
+    height: 2.8rem;
+    line-height: 2.8rem;
+    margin-left: 1rem;
+    text-align: center;
+    width: 10rem
+}
+
+.Home-side-card-option-description {
+    line-height: 1.9rem;
+    margin-bottom: 2.6rem;
+    margin-top: 1.4rem;
+    min-height: 5.7rem
+}
+
+.Home-default-btn,
+.Home-side-card-option-description {
+    color: #fff;
+    font-family: Rubik-Regular;
+    font-size: 1.6rem
+}
+
+.Home-default-btn {
+    background: #417cd5;
+    border-radius: 1.2rem;
+    cursor: pointer;
+    height: 4rem;
+    line-height: 4rem;
+    text-align: center
+}
+
+.Home-deposit-container {
+    padding-top: 10rem
+}
+
+.Home-deposit-title-section .Home-title {
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 0;
+    margin-bottom: 4rem;
+    text-align: center
+}
+
+.Home-deposit-title-section .Home-description {
+    color: hsla(0, 0%, 100%, .8);
+    font-family: Rubik-Regular;
+    font-size: 2.8rem;
+    font-weight: 400;
+    margin-bottom: 6rem;
+    text-align: center
+}
+
+.Create-card {
+    margin-bottom: 10rem;
+    min-width: 112rem
+}
+
+.CreateTableSmall,
+.DepositTableSmall {
+    display: none;
+    margin: 10px 0
+}
+
+.App-card {
+    background: #091927;
+    border: 2px solid #313f50;
+    border-radius: 1.2rem;
+    padding: 1.2rem
+}
+
+.App-card-content {
+    grid-row-gap: 1.2rem;
+    display: grid
+}
+
+.App-card-title {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    justify-content: space-between;
+    letter-spacing: 0;
+    line-height: 2.1rem;
+    margin-block-end: 1.6rem;
+}
+
+.App-card-title,
+.flexRow {
+    align-items: center;
+    display: flex;
+    flex-direction: row
+}
+
+.App-card-divider {
+    background: #313f50;
+    block-size: 1px;
+    margin: 1.6rem 0 2.4rem
+}
+
+.App-card-row {
+    grid-column-gap: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: initial
+}
+
+.App-card-row>div:last-child {
+    text-align: end
+}
+
+.App-card-row div {
+    color: #fff;
+    font-family: Rubik-Regular;
+    font-size: 1.6rem
+}
+
+.App-card-row .poolApy {
+    color: #5699ff
+}
+
+@media (max-inline-size: 1200px) {
+    .Create-card {
+        min-width: auto
+    }
+}
+
+@media (max-inline-size: 750px) {
+    .Home-choose-side-container {
+        inline-size: auto
+    }
+
+    .Home-choose-title-section {
+        padding: 1.2rem
+    }
+
+    .Home-side-card-options {
+        grid-row-gap: 1.5rem;
+        display: grid;
+        grid-template-columns: 1fr
+    }
+
+    .Home-side-card-option {
+        max-width: none;
+        padding: 1.2rem
+    }
+
+    .CreateTable,
+    .DepositTable {
+        display: none
+    }
+
+    .CreateTableSmall,
+    .DepositTableSmall {
+        display: block
+    }
+
+    .Home-default-btn {
+        margin-top: 1.6rem
+    }
+}
+
+@media (max-width: 600px) {
+    .Home-title-section-container {
+        padding-top: 4rem;
+        width: auto
+    }
+
+    .default-container {
+        padding-left: 1.2rem;
+        padding-right: 1.2rem
+    }
+
+    .Home-latest-info-container {
+        justify-content: center;
+        width: auto
+    }
+
+    .Home-side-card-option .Home-token-card-option-title {
+        grid-row-gap: 1.5rem;
+        display: grid;
+        grid-template-columns: 1fr
+    }
+
+    .Home-side-card-option .side-bottoms {
+        justify-content: start
+    }
+}
+.jsx-2945154129 {
+    width: 30px;
+    height: 30px;
+}
+.jsx-2666059025 {
+    width: 30px;
+}
+.jsx-2011844561 {
+    width: 30px;
+}
+.jsx-3275248919 {
+    width: 30px;
+}
+.DepositTable thead th {
+    background: none;
+    border: none;
+    border-bottom: 2px solid hsla(0, 0%, 100%, .2);
+    color: hsla(0, 0%, 100%, .6);
+    font-family: Rubik-Regular;
+    font-size: 2rem
+}
+
+.DepositTable thead th:first-child,
+.DepositTable thead th:last-child {
+    border: none;
+    border-bottom: 2px solid hsla(0, 0%, 100%, .2);
+    border-radius: 0
+}
+
+.DepositTable tbody tr td {
+    border-bottom: 2px solid hsla(0, 0%, 100%, .2);
+    color: #fff;
+    font-family: Rubik-Regular;
+    font-size: 2.4rem;
+    padding: 1.5rem 1.2rem
+}
+
+.DepositTable .Home-default-btn {
+    width: 100%
+}
+
+.asset-img {
+    align-items: center;
+    display: flex
+}
+
+.DepositTable .asset-img .image {
+    margin-right: .8rem
+}
+
+.poolApy {
+    color: #5699ff;
+    cursor: pointer;
+    font-size: 2.4rem;
+    text-decoration-line: underline
+}
+
+.airdrop {
+    background: none;
+    border: 2px solid #fff;
+    border-radius: 1.2rem;
+    color: #fff;
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+    line-height: 40px;
+    margin-bottom: 2rem;
+    padding: 1.6rem;
+    text-align: center
+}
+
+.hard-cap {
+    display: flex;
+    margin-left: 20px
+}
+
+#HardCap-App-select {
+    background: none;
+    border: 2px solid #fff;
+    border-radius: 12px;
+    height: 40px;
+    min-width: 110px
+}
+
+#HardCap-App-select .value {
+    color: #fff;
+    font-family: Rubik-Regular;
+    font-size: 18px
+}
+
+#HardCap-App-select .option {
+    font-size: 18px;
+    justify-content: center
+}
+
+#HardCap-App-select .image {
+    line-height: 24px
+}
+
+#HardCap-App-select .icon {
+    color: #fff;
+    font-size: 16px
+}
+
+#HardCap-App-select:hover .icon {
+    color: #fff
+}
+
+.apr-tooltip {
+    display: flex;
+    font-size: 12px;
+    font-weight: 400;
+    justify-content: space-between;
+    line-height: 30px;
+    width: 16rem
+}
+
+.Strategies-App-dropdown {
+    background: #1c2532 !important;
+    border: 1px solid #fff;
+    border-radius: 12px !important;
+    max-height: none !important
+}
+
+.Strategies-App-dropdown .option {
+    background: #1c2532 !important;
+    color: #fff !important;
+    font-size: 20px !important;
+    height: 44px !important;
+    padding: 0 20px !important
+}
+
+.Strategies-App-dropdown .option:hover {
+    background: #2a3748 !important
+}
+
+.Strategies-App-dropdown .image {
+    line-height: 24px !important
+}
+
+.Strategies-App-dropdown .token-symbol {
+    font-family: Rubik-Regular
+}
+
+.Strategies-App-dropdown {
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none
+}
+
+.Strategies-App-dropdown::-webkit-scrollbar {
+    width: 2px
+}
+
+.Strategies-App-dropdown::-webkit-scrollbar-track {
+    background: #091927;
+    border-radius: 2px
+}
+
+.Strategies-App-dropdown::-webkit-scrollbar-thumb {
+    background: #fff;
+    border: none;
+    border-radius: 2px;
+    opacity: .9
+}
+
+.CreateTable thead th {
+    background: none;
+    border: none;
+    border-bottom: 2px solid hsla(0, 0%, 100%, .2);
+    color: hsla(0, 0%, 100%, .6);
+    font-family: Rubik-Regular;
+    font-size: 2rem
+}
+
+.CreateTable thead th:first-child,
+.CreateTable thead th:last-child {
+    border: none;
+    border-bottom: 2px solid hsla(0, 0%, 100%, .2);
+    border-radius: 0
+}
+
+.CreateTable tbody tr td {
+    border-bottom: 2px solid hsla(0, 0%, 100%, .2);
+    color: #fff;
+    font-family: Rubik-Regular;
+    font-size: 2.4rem;
+    padding: 1.5rem 1.2rem
+}
+
+.CreateTable .Home-default-btn {
+    width: 100%
+}
+
+.CreateTable .asset-img {
+    align-items: center;
+    display: flex
+}
+
+.CreateTable .asset-img .image {
+    margin-right: .8rem
+}
+
+.App {
+    min-height: 100%;
+    overflow: hidden;
+    position: relative
+}
+
+.App-content {
+    position: static !important
+}
+
+.App-content header {
+    position: relative;
+    z-index: 800
+}
+
+.App-header.large {
+    -webkit-backdrop-filter: blur(.4rem);
+    backdrop-filter: blur(.4rem);
+    background: transparent 0 0 no-repeat padding-box;
+    display: flex;
+    justify-content: space-between;
+    margin: 2.4rem 0;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    position: relative
+}
+
+.App-header-container {
+    width: 22rem
+}
+
+.App-header-container-left {
+    align-items: center;
+    display: flex
+}
+
+.App-header .App-header-link-main,
+.App-header a.App-header-link-main {
+    display: flex;
+    font-size: 1.6rem
+}
+
+.App-header-container-left .a,
+.App-header-container-left a {
+    color: #a0a3c4;
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 400
+}
+
+.App-header .a,
+.App-header a {
+    cursor: pointer;
+    text-decoration: none
+}
+
+.App-header .a,
+.App-header a,
+.App-header-link-main img {
+    display: inline-block;
+    vertical-align: middle
+}
+
+.App-header-link-main img.small {
+    display: none
+}
+
+.App-header-container-right {
+    align-items: center;
+    display: flex
+}
+
+.default-btn {
+    background: #0c1e2f;
+    border-radius: 1.2rem;
+    color: #fff;
+    font-family: Rubik-Regular;
+    font-size: 1.6rem;
+    height: 4rem;
+    line-height: 4rem;
+    text-align: center;
+    width: 17.2rem
+}
+
+.link {
+    display: contents !important
+}
+
+@-webkit-keyframes App-logo-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    to {
+        -webkit-transform: rotate(1turn);
+        transform: rotate(1turn)
+    }
+}
+
+@keyframes App-logo-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    to {
+        -webkit-transform: rotate(1turn);
+        transform: rotate(1turn)
+    }
+}
+
+@media (max-width: 1033px) {
+    .App-header {
+        grid-template-columns: 1fr auto auto auto auto
+    }
+}
+
+@media (max-width: 600px) {
+    .App-header-link-main img.big {
+        display: none
+    }
+
+    .App-header-link-main img.small {
+        display: inline-block
+    }
+
+    .DepositTable .Home-default-btn {
+        padding: 0 2.1rem
+    }
+}
+
+.Footer-wrapper {
+    background: #203447;
+    bottom: 0;
+    height: 25rem;
+    left: 50%;
+    padding-top: 6rem;
+    position: absolute;
+    text-align: center;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 100vw
+}
+
+.Footer-logo {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem
+}
+
+.Footer-logo img {
+    height: 4.8rem
+}
+
+.Footer-social-link-block {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 10.2rem
+}
+
+.Footer-social-link-block .App-social-link {
+    align-items: center;
+    display: flex;
+    height: 3.6rem;
+    justify-content: center;
+    margin: 0 6rem;
+    width: 3.6rem
+}
+
+.Footer-social-link-block .App-social-link img {
+    height: 3.6rem;
+    width: 3.6rem
+}
+
+.Footer-social-link-block .App-social-link:hover img {
+    -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1)
+}
+
+@media (max-width: 900px) {
+    .Footer-social-link-block .App-social-link {
+        margin: 0 3rem
+    }
+}
+
+@media (max-width: 750px) {
+    .Footer-social-link-block .App-social-link {
+        margin: 0 1rem
+    }
+}
